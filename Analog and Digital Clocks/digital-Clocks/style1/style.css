@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hours,
+#mins,
+#secs {
+  height: 20vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.colon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 0.5rem;
+  font-size: 1em;
+}
+

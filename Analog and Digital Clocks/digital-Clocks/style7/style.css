@@ -1,0 +1,60 @@
+body {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-container {
+  background: transparent;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-shape {
+  fill: transparent;
+  stroke-width: 1.5rem;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-dasharray: 876;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  transition: 1s;
+}
+
+.main-circle {
+  stroke: yellow;
+  stroke-dashoffset: calc(876 - (876 * (var(--loadingSize) / 60)));
+}
+
+.content {
+  color: yellow;
+  position: absolute;
+  font-size: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.sec {
+  animation: secAnimation 1s infinite;
+}
+
+@keyframes secAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

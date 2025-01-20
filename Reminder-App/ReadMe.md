@@ -3,6 +3,9 @@
 ## Overview
 The **Task Reminder App** is a simple web application that allows users to set reminders for tasks. Users can input a task and a reminder time, and the app will alert the user when the reminder time is reached. The app demonstrates the use of closures and the `this` keyword in JavaScript to manage timers and event handlers.
 
+## Screenshot
+![Screenshot](recording.gif)
+
 ## Features
 - Set reminders for tasks with a specified time.
 - Display a list of tasks with their reminder times.
